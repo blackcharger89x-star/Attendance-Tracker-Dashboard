@@ -17,7 +17,7 @@ The dashboard pulls from a raw Excel attendance log (daily Present/Absent/Leave/
 ![Attendance Tracker Dashboard](dashboard_preview.png)
 
 ## Data source
-![SQL](Sql.png)
+![SQL](raw_data_preview.png)
 
 Raw data comes from a manually maintained Excel attendance sheet (one tab per month), which I cleaned and connected into Power BI to build the summary view above. Both the source Excel file and the Power BI file are included in this repo.
 
