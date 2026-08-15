@@ -18,4 +18,6 @@ The dashboard pulls from a raw Excel attendance log (daily Present/Absent/Leave/
 
 ## Data source
 
-Raw data comes from a manually maintained Excel attendance sheet (one tab per month), which I cleaned and connected into Power BI to build the summary view above.
+Raw data comes from a manually maintained Excel attendance sheet (one tab per month), which I cleaned and connected into Power BI to build the summary view above. Both the source Excel file and the Power BI file are included in this repo.
+
+*Note: employee names and figures are practice/placeholder data, not real personnel records.*
