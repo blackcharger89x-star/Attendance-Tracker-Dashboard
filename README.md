@@ -1,45 +1,21 @@
-# Sql-Data-analysis-portfoli
-# Business Performance & Activity Tracker Dashboard
+# Attendance Tracker Dashboard
 
-An end-to-end Power BI solution designed to transform raw operational data into actionable business intelligence. This project features advanced data modeling, custom DAX measures, and interactive visualizations tailored for strategic decision-making.
+A Power BI dashboard built from a monthly employee attendance sheet — tracking presence, absences, leave, and salary data for a team of 20 employees.
 
-🔗 **[Live Interactive Report Link / Portfolio Link]**  
-*https://drive.google.com/file/d/16lsvshi3f8hH9lVhYFqtYBfiRTYXyqeM/view?usp=sharing*
+## What it does
 
----
+The dashboard pulls from a raw Excel attendance log (daily Present/Absent/Leave/Week-off status per employee, tracked across 12 months) and summarizes it into a single interactive report page:
 
-## 🖼️ Dashboard Preview & Interface
+- **KPI cards** — Sum of Days, Sum of Paid Days, Sum of Present, Sum of Absent, Sum of Leave, Median Weekoff, Average Salary
+- **Performance gauge** — Average of Performance (0–1 scale)
+- **Combo chart** — Absent, Leave, and Weekoff trends by month
+- **Salary breakdown** — Sum of Salary, Deductions, and Total Salary
+- **Interactive filters** — Employee ID and Month slicers, so any employee's individual record can be pulled up instantly
 
-*Replace these placeholders with actual screenshots or GIFs of your Tracker.pbix tabs to make the repo visually engaging.*
+## Dashboard Preview
 
-### 1. Executive Summary Tab
-![Executive Summary Dashboard](<img width="1315" height="739" alt="image" src="https://github.com/user-attachments/assets/f701da2e-9f41-4654-bc37-33ad5f86b798" />)
-<img width="1900" height="734" alt="image" src="https://github.com/user-attachments/assets/ae323392-d82e-4e87-8d06-74d61439628a" /> 
-*Provides a high-level overview of core KPIs, overall performance trends, and critical business health metrics.*
+![Attendance Tracker Dashboard](images/dashboard_preview.png)
 
-### 2. Operational Breakdown Tab
-![Operational Insights](<img width="1914" height="815" alt="image" src="https://github.com/user-attachments/assets/bcb249f9-648c-4e02-ba49-ffd2b70f2841" />)
-*Allows deep-diving into specific categories, timelines, and regional/departmental performance.*
+## Data source
 
----
-
-## 📊 Project Overview
-
-### The Business Problem
-Decision-makers often struggle to track performance metrics due to fragmented data scattered across disconnected operational logs. This dashboard resolves that bottleneck by consolidating historical activity into a unified, automated reporting system. 
-
-The **Tracker.pbix** report provides business leaders with real-time visibility into operational efficiency, trends over time, and variance against targets, shifting the organization from reactive firefighting to proactive, data-driven planning.
-
----
-
-## 🛠️ Data Source & Modeling
-
-### 1. Data Extraction & ETL (Power Query)
-* Raw data was extracted from `[<img width="1297" height="970" alt="image" src="https://github.com/user-attachments/assets/15d5516b-91c7-4ec0-801e-faf3fcca8670" />]
-* **Power Query (M)** was utilized for heavy data cleansing and transformation, which included:
-  * Removing duplicates, handling null values, and enforcing strict data type formatting.
-  * Unpivoting messy operational tables to create a clean, normalized structure.
-  * Creating a dedicated, continuous **Calendar/Date Table** to support advanced Time Intelligence calculations.
-
-### 2. Data Modeling & Architecture
-The report utilizes a highly optimized **Star Schema** to ensure fast DAX calculation speeds and intuitive filtering behavior.
+Raw data comes from a manually maintained Excel attendance sheet (one tab per month), which I cleaned and connected into Power BI to build the summary view above.
